@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './app.css';
-import WordstackChart from './components/WordstackChart.js';
+import WordstackChart from './components/WordstackChart';
 
 class App extends Component {
   render() {
