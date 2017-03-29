@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './app.css';
-import WordstackChart from './components/Chart/chart';
-import WordstackFormTextArea from './components/FormTextArea/textarea';
-import WordstackFormText from './components/FormText/text';
-import WordstackFormButton from './components/FormButton/button';
+import WordstackChart from './components/Chart';
+import WordstackFormTextArea from './components/FormTextArea';
+import WordstackFormText from './components/FormText';
+import WordstackFormButton from './components/FormButton';
 
 class App extends Component {
   render() {
