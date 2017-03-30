@@ -1,21 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './app.css';
-import WordstackChart from './components/Chart';
-import WordstackFormText from './components/FormText';
-import WordstackFormButton from './components/FormButton';
+import WordstackTitle from './components/PageTitle';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <WordstackFormText className="" placeholder="Words" inputType="number"/>
-        <WordstackFormButton className="" title="Start"/>
-
-        <WordstackChart className="" />
+        <WordstackTitle title="Hello World" />
       </div>
     );
   }
