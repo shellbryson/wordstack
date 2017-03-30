@@ -12,7 +12,7 @@ class App extends Component {
 
         <img src={logo} className="App-logo" alt="logo" />
 
-        <WordstackFormText className="" placeholder="Password" inputType="password"/>
+        <WordstackFormText className="" placeholder="Words" inputType="number"/>
         <WordstackFormButton className="" title="Start"/>
 
         <WordstackChart className="" />

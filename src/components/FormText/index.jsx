@@ -14,10 +14,11 @@ export default class WordstackFormText extends Component {
   }
 
   render() {
-    const inputType = this.props.inputType;
+    const inputType = this.props.inputType ? this.props.inputType : 'text';
+    const inputTypeClass = `ws-form-input__${inputType}`;
 
     return (
-      <input type={inputType ? (this.props.inputType):('text')} className='ws-form-input' placeholder={this.props.placeholder} onChange={this.handleChange} />
+      <input type={inputType} className={`ws-form-input ${inputTypeClass}`} placeholder={this.props.placeholder} onChange={this.handleChange} />
     );
   }
 };
