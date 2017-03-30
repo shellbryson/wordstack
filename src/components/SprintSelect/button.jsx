@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class WordstackSprintSelectButton extends Component {
+export default class SprintSelectButton extends Component {
 
   constructor(props) {
     super(props);
@@ -10,7 +10,9 @@ export default class WordstackSprintSelectButton extends Component {
 
   handleClick(event) {
     const btnAction = this.props.buttonAction;
-    this.setState({ action: btnAction });
+    this.setState(
+      { action: btnAction }
+    );
     console.log(`clicked: sprint ${btnAction}`);
 
     if (btnAction === 'timed') {

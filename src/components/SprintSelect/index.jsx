@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import WordstackSprintSelectButton from './button';
+import SprintSelectButton from './button';
+import FormButton from '../../components/FormButton/';
 
-export default class WordstackSprintSelect extends Component {
+export default class SprintSelect extends Component {
 
   render() {
     return (
       <div>
-          <WordstackSprintSelectButton buttonTitle="Timed" buttonAction="timed" />
-          <WordstackSprintSelectButton buttonTitle="Until" buttonAction="until" />
+        <SprintSelectButton buttonTitle="Timed" buttonAction="timed" />
+        <SprintSelectButton buttonTitle="Until" buttonAction="until" />
+        <FormButton title="Start" />
       </div>
     );
   }

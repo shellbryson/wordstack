@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class WordstackFormSelect extends Component {
+export default class FormSelect extends Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};

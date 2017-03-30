@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class WordstackFormText extends Component {
+export default class FormText extends Component {
 
   constructor(props) {
     super(props);

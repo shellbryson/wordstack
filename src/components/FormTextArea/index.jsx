@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class WordstackFormTextArea extends Component {
+export default class FormTextArea extends Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
