@@ -17,8 +17,10 @@ export default class SprintSelectButton extends Component {
 
     if (btnAction === 'timed') {
       console.log('load sprint: timed');
+      this.props.triggerSprint();
     } else if (btnAction === 'until') {
       console.log('load sprint: until');
+      this.props.triggerSprint();
     }
   }
 
