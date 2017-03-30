@@ -9,7 +9,7 @@ const data = [
   {day: 4, target: 4000}
 ];
 
-export default class WordstackChart extends Component {
+export default class Chart extends Component {
   render() {
     return (
       <VictoryChart>

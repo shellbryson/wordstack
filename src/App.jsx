@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './app.css';
-import WordstackTitle from './components/PageTitle';
+import PageTitle from './components/PageTitle';
+import SprintSelect from './components/SprintSelect';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <WordstackTitle title="Hello World" />
+        <PageTitle title="WordStack" />
+        <SprintSelect />
       </div>
     );
   }

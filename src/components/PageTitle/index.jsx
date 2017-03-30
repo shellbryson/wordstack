@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class WordstackPageTitle extends Component {
+export default class PageTitle extends Component {
 
   render() {
     return (
