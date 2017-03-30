@@ -1,7 +1,12 @@
-@import '../components/Chart/chart';
+// Page typography
+@import '../components/PageTitle/title';
+
+// Forms
 @import '../components/FormButton/button';
 @import '../components/FormSelect/select';
 @import '../components/FormText/text';
 @import '../components/FormTextArea/textarea';
 
-@import '../components/PageTitle/title';
+// Combination Components
+@import '../components/SprintSelect/sprint-select';
+@import '../components/Chart/chart';
