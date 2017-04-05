@@ -14,28 +14,21 @@ export default class SprintSelect extends Component {
     this.setSprint = this.setSprint.bind(this);
   }
 
-  handleClick() {
+  handleClick(e) {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
   }
 
-  setSprint() {
-    let sprint = this.state.sprintType;
-    console.log(this.sprint);
-    if (sprint==="until") {
-      this.setState({sprintType: "timed"});
-    } else {
-      this.setState({sprintType: "until"});
-    }
-    console.log(this.state.sprintType);
+  setSprint(sp) {
+    this.setState({ sprintType: sp } );
   }
 
   render() {
     return (
       <div>
-        <SprintSelectButton onClick={this.setSprint} sprint="until" title="until"></SprintSelectButton>
-        <SprintSelectButton onClick={this.setSprint} sprint="timed" title="timed"></SprintSelectButton>
+        <SprintSelectButton sprintClick={this.setSprint} sprint="until"></SprintSelectButton>
+        <SprintSelectButton sprintClick={this.setSprint} sprint="timed"></SprintSelectButton>
         <button onClick={this.handleClick} >
           {this.state.isToggleOn ? 'ON' : 'OFF'}
         </button>
