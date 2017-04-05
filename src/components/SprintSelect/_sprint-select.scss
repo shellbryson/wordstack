@@ -10,4 +10,10 @@
   margin: 16px;
   padding: 16px;
   background-color: $color-active;
+  border: 2px solid black;
+
+  &--active {
+    border: 2px solid $color-active;
+  }
+
 }

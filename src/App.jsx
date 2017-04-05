@@ -4,6 +4,7 @@ import PageTitle from './components/PageTitle';
 import SprintSelect from './components/SprintSelect';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
